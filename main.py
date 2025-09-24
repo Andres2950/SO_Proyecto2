@@ -1,13 +1,7 @@
-
-cache = []
-
 def main() -> None:
 
     peticiones = [3,1,4,8,5,9,3,2,5,4]
-    
     k = 2
-
-    
     cache = peticiones[:k]
     peticiones = peticiones[k:]
     fallos = k
@@ -34,7 +28,6 @@ def main() -> None:
         fallos+=1
         print(f"cache:{cache}") 
     
-
     print(fallos)
 
 if __name__ == "__main__":
