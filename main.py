@@ -6,6 +6,8 @@ def main() -> None:
     peticiones = peticiones[k:]
     fallos = k
 
+    print(f"Starting cache:{cache}") 
+
     for pe_i, pe in enumerate(peticiones):
         if pe in cache:
             print(f"HIT: {pe}")
@@ -28,7 +30,7 @@ def main() -> None:
         fallos+=1
         print(f"cache:{cache}") 
     
-    print(fallos)
+    print(f"Fallos: {fallos}")
 
 if __name__ == "__main__":
     main()
