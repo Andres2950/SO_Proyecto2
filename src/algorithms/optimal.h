@@ -9,8 +9,7 @@ int optimal(int k, List<int> &peticiones);
 
 #define OPTIMAL_IMPLMENTATION
 #include <stdio.h>
-#include "../data_structures/DLinkedList.h"
-
+#include "../data_structures/ArrayList.h"
 /*    peticiones = [3,1,4,8,5,9,3,2,5,4]
     k = 2
     cache = peticiones[:k]
@@ -43,7 +42,7 @@ int optimal(int k, List<int> &peticiones);
  * */
 
 int optimal(int k, List<int>& peticiones) {
-    List<int>* cache = new DLinkedList<int>();
+    List<int>* cache = new ArrayList<int>();
     //Inserta y remueve las cosas hasta que se llene el cache
     for (int i = 0; i < k; ++i) {
         peticiones.goToStart();
@@ -68,7 +67,7 @@ int optimal(int k, List<int>& peticiones) {
         int to_remove = -1;
         //for pag_i, pag in enumerate(cache)
         for (int pag_i = 0; pag_i < cache->getSize(); ++pag_i) {
-            List<int>* tmp = new DLinkedList<int>();
+            List<int>* tmp = new ArrayList<int>();
             // tmp = peticiones[pe_i:]
             for (int i = petition_i; i < peticiones.getSize(); ++i) {
                 peticiones.goToPos(i);

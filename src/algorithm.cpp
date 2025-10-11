@@ -2,7 +2,7 @@
 #include <string>
 #include "algorithms/optimal.h"
 #include "data_structures/List.h"
-#include "data_structures/DLinkedList.h"
+#include "data_structures/ArrayList.h"
 
 using std::string;
 
@@ -15,7 +15,7 @@ void hello_world(string s){
 int main(int argc, char* argv[]){
     hello_world("print");
 
-    List<int>* l = new DLinkedList<int>();
+    List<int>* l = new ArrayList<int>();
 
     
     //peticiones = [3,1,4,8,5,9,3,2,5,4]
