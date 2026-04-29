@@ -1,19 +1,21 @@
 # SO_Proyecto2
 
-## Compilar proyecto
+A paging simulator that works to compare multiple paging algorithms with the optimal paging algorithm.
 
-La primera vez, ejecutar desde la raíz:
+## Compile
+
+The first time execute from the project root
 ```
 cmake -B build -S .
 ```
-Con eso genera los makefiles
 
-Para compilar se ejecuta:
+
+To compile the project execute:
 ```
 cmake --build build
 ```
 
-La app se ejecuta con:
+To execute the app:
 ```
 ./build/app/app
 ```
